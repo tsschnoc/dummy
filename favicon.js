@@ -1,6 +1,6 @@
 function setTextFavicon() {
     var favIconUrl;
-    var text;
+    var text = 'SF';
     switch (SFDCSessionVars.oid) {
       case '00D19000000Diqk':
         text = 'EM';
