@@ -14,11 +14,19 @@ function setTextFavicon() {
       canvas = document.createElement('canvas');
       canvas.width = 20
       canvas.height = 20
-
       context = canvas.getContext('2d');
+
+      if (SFDCSessionVars.host === 'login.salesforce.com') {
+        context.rect(0,0,20,20);
+        context.fillStyle="blue";
+        context.fill();         
+      }
+      
+      if (SFDCSessionVars.host === 'test.salesforce.com') {
         context.rect(0,0,20,20);
         context.fillStyle="red";
-        context.fill();
+        context.fill();     
+      }
 
       context.fillStyle = '#000';
       context.font = "15px Georgia";
