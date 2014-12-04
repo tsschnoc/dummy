@@ -19,16 +19,19 @@ function setTextFavicon() {
       if (SFDCSessionVars.host === 'login.salesforce.com') {
         context.rect(0,0,20,20);
         context.fillStyle="blue";
-        context.fill();         
+        context.fill();       
+              context.fillStyle = 'WHITE';
+
       }
       
       if (SFDCSessionVars.host === 'test.salesforce.com') {
         context.rect(0,0,20,20);
         context.fillStyle="red";
         context.fill();     
+              context.fillStyle = 'BLACK';
+
       }
 
-      context.fillStyle = '#000';
       context.font = "15px Georgia";
       context.fillText(text, 0, 17);
 
