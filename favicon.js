@@ -5,8 +5,10 @@ function setTextFavicon() {
     var oid;
     var host;
     if (typeof SFDCSessionVars !== 'undefined' &&  SFDCSessionVars && SFDCSessionVars.oid)
+    {
       oid = SFDCSessionVars.oid;
       host = SFDCSessionVars.host;
+    }
     else 
     {
         oid = SfdcDevConsole.SID.substring(0,15);    
