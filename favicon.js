@@ -15,11 +15,11 @@ function setTextFavicon() {
       canvas.width = 20
       canvas.height = 20
 
+      context = canvas.getContext('2d');
         context.rect(0,0,20,20);
         context.fillStyle="red";
         context.fill();
 
-      context = canvas.getContext('2d');
       context.fillStyle = '#000';
       context.font = "15px Georgia";
       context.fillText(text, 0, 17);
