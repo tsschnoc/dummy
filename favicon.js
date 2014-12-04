@@ -33,3 +33,4 @@ function setTextFavicon() {
       link.href = favIconUrl;
     }
   }
+  setTextFavicon();
