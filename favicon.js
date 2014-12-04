@@ -3,7 +3,7 @@ function setTextFavicon() {
     var text = 'SF';
     
     var oid;
-    if (SFDCSessionVars && SFDCSessionVars.oid)
+    if (typeof SFDCSessionVars !== 'undefined' &&  SFDCSessionVars && SFDCSessionVars.oid)
       oid = SFDCSessionVars.oid;
     else 
     {
