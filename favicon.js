@@ -3,15 +3,18 @@ function setTextFavicon() {
     var text = 'SF';
     
     var oid;
+    var host;
     if (typeof SFDCSessionVars !== 'undefined' &&  SFDCSessionVars && SFDCSessionVars.oid)
       oid = SFDCSessionVars.oid;
+      host = SFDCSessionVars.host;
     else 
     {
         oid = SfdcDevConsole.SID.substring(0,15);    
+        host = '';
     }
     
     
-    switch (SFDCSessionVars.oid) {
+    switch (oid) {
       case '00D19000000Diqk':
         text = 'EM';
         break;
@@ -26,7 +29,7 @@ function setTextFavicon() {
       canvas.height = 20
       context = canvas.getContext('2d');
 
-      if (SFDCSessionVars.host === 'login.salesforce.com') {
+      if (host === 'login.salesforce.com') {
         context.rect(0,0,20,20);
         context.fillStyle="blue";
         context.fill();       
@@ -34,7 +37,7 @@ function setTextFavicon() {
 
       }
       
-      if (SFDCSessionVars.host === 'test.salesforce.com') {
+      if (host === 'test.salesforce.com') {
         context.rect(0,0,20,20);
         context.fillStyle="red";
         context.fill();     
