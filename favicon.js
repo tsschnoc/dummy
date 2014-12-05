@@ -40,6 +40,16 @@ function setTextFavicon() {
             backgroundcolor = 'GRAY';
             textcolor = 'WHITE';
             break;
+            
+            //nzz
+        case '00Dg0000003M0D0':
+            text = 'NZ';
+            backgroundcolor = 'LIGHTBLUE';
+            textcolor = 'WHITE';
+            break;
+            
+            
+            
     }
 
     if (text) {
