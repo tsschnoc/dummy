@@ -47,7 +47,12 @@ function setTextFavicon() {
             backgroundcolor = 'LIGHTBLUE';
             textcolor = 'WHITE';
             break;
-            
+        
+        case '00D20000000NzpI':
+            text = 'LY';
+            backgroundcolor = 'PINK';
+            textcolor = 'WHITE';
+            break;    
             
             
     }
