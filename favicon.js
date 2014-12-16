@@ -89,7 +89,7 @@ function setTextFavicon() {
         
         var titleTag = document.querySelector("head title");
         if (titleTag && preTitle) {
-            titleTag.text = preTitle + titleTag.text;    
+            titleTag.text = preTitle + ' - ' + titleTag.text;    
         }
         
         
