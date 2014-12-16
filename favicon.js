@@ -3,6 +3,7 @@ function setTextFavicon() {
     var text = '?';
     var backgroundcolor = 'WHITE';
     var textcolor = 'BLACK';
+    var preTitle;
     
     var oid;
     var host;
@@ -52,6 +53,7 @@ function setTextFavicon() {
             text = 'LY';
             backgroundcolor = 'PINK';
             textcolor = 'WHITE';
+            preTitle = 'LyricP'
             break;    
             
             
@@ -84,6 +86,16 @@ function setTextFavicon() {
             document.head.appendChild(link);
         }
         link.href = favIconUrl;
+        
+        var titleTag = document.querySelector("head title");
+        if (titleTag && preTitle) {
+            titleTag.text = preTitle + titleTag.text;    
+        }
+        
+        
+        
+        
+        
     }
   }
   setTextFavicon();
