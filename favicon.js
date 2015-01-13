@@ -57,6 +57,12 @@ function setTextFavicon() {
             break;    
             
             
+        case '00Dc0000003u46s':
+            text = 'EL';
+            backgroundcolor = 'GREEN';
+            textcolor = 'WHITE';
+            preTitle = 'Elektrobit'
+            break;    
     }
 
     if (text) {
