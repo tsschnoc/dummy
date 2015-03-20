@@ -12,7 +12,7 @@ function setTextFavicon() {
       oid = SFDCSessionVars.oid;
       host = SFDCSessionVars.host;
     }
-    else 
+    else if (typeof SfdcDevConsole !== 'undefined' && SfdcDevConsole && SfdcDevConsole.SID ) 
     {
         oid = SfdcDevConsole.SID.substring(0,15);    
         host = '';
